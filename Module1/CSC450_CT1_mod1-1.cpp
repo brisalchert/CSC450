@@ -7,7 +7,6 @@ using namespace std;
 // Main Function
 int main()
 {
-
     //Standard Ouput Statement
     cout << "Welcome to this C++ Program" << endl;
 
