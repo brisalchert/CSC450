@@ -11,7 +11,7 @@ int main() {
 
     // Print personal information to the console
     cout << "PERSONAL INFORMATION" << endl;
-    cout << "--------------------" << endl;
+    cout << "-----------------------------" << endl;
     cout << "First Name: " << firstName << endl;
     cout << "Last Name: " << lastName << endl;
     cout << "Address: " << address << endl;
