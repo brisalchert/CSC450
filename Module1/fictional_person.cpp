@@ -6,8 +6,9 @@ int main() {
     string firstName = "John",
            lastName = "Smith",
            address = "901 Main Street",
-           city = "Boston";
-    int zipCode = 02112;
+           city = "Boston",
+           // Zip Code needs to be a string to preserve the leading 0
+           zipCode = "02112";
 
     // Print personal information to the console
     cout << "PERSONAL INFORMATION" << endl;
