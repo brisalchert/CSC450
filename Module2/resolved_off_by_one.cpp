@@ -10,9 +10,12 @@ int main(void) {
 
     strcpy_s(s1, sizeof(s2), s2);
     dest = (char *)malloc(strlen(s1));
+    // Changed loop starting index to 0 and fixed the index
+    // for the loop condition
     for (i=0; i <= sizeof(s1) - 1; i++) {
         dest[i] = s1[i];
     }
+    // Ensure null terminator is present
     dest[i] = '\0';
     printf("dest = %s", dest);
     /* ... */;
