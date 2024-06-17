@@ -13,5 +13,11 @@ int main() {
     cout << "Enter the second string: " << endl;
     cin >> secondString;
 
+    // Concatenate the strings by appending secondString to firstString
+    firstString.append(secondString);
+
+    // Print the results to the user
+    cout << "Concatenated string: \n" + firstString << endl;
+
     return 0;
 }
