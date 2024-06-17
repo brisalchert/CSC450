@@ -7,5 +7,11 @@ int main() {
     string firstString;
     string secondString;
 
+    // Get input from the user
+    cout << "Enter the first string: " << endl;
+    cin >> firstString;
+    cout << "Enter the second string: " << endl;
+    cin >> secondString;
+
     return 0;
 }
