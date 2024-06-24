@@ -37,5 +37,10 @@ int main() {
     cout << "Contents of second pointer: " << pointer2 << endl;
     cout << "Contents of third pointer: " << pointer3 << endl;
 
+    // Deallocate dynamic memory
+    delete pointer1;
+    delete pointer2;
+    delete pointer3;
+
     return 0;
 }
