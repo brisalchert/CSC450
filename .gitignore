@@ -1,6 +1,9 @@
 # Microsoft Word file
 *.docx
 
+# Temp files
+*.tmp
+
 # PDF file
 *.pdf
 
