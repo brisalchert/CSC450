@@ -23,5 +23,12 @@ int main() {
     cout << "Enter the third integer: " << endl;
     cin >> *pointer3;
 
+    cout << endl;
+
+    // Display contents of the variables using dereference operator
+    cout << "Contents of first variable: " << *pointer1 << endl;
+    cout << "Contents of second variable: " << *pointer2 << endl;
+    cout << "Contents of third variable: " << *pointer3 << endl;
+
     return 0;
 }
