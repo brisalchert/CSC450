@@ -30,5 +30,12 @@ int main() {
     cout << "Contents of second variable: " << *pointer2 << endl;
     cout << "Contents of third variable: " << *pointer3 << endl;
 
+    cout << endl;
+
+    // Display contents of the pointers using pointer names
+    cout << "Contents of first pointer: " << pointer1 << endl;
+    cout << "Contents of second pointer: " << pointer2 << endl;
+    cout << "Contents of third pointer: " << pointer3 << endl;
+
     return 0;
 }
