@@ -9,7 +9,7 @@ int main() {
     int *pointer3;
 
     // Initialize pointers to dynamic memory
-    // Use (nothrow) to prevent exception, then check for nullptr
+    // Use (nothrow) to prevent exception, then check for nullptr afterwards
     pointer1 = new (nothrow) int;
     pointer2 = new (nothrow) int;
     pointer3 = new (nothrow) int;
@@ -17,11 +17,6 @@ int main() {
     // If dynamic memory allocation fails, terminate the program
     if (pointer1 == nullptr || pointer2 == nullptr || pointer3 == nullptr) {
         cout << "Dynamic memory allocation unsuccessful. Terminating program." << endl;
-
-        // Ensure dynamic memory is deallocated
-        delete pointer1;
-        delete pointer2;
-        delete pointer3;
     }
     else {
         // Ask for user input, storing in dynamic memory
@@ -47,12 +42,12 @@ int main() {
         cout << "Contents of first pointer: " << pointer1 << endl;
         cout << "Contents of second pointer: " << pointer2 << endl;
         cout << "Contents of third pointer: " << pointer3 << endl;
-
-        // Deallocate dynamic memory
-        delete pointer1;
-        delete pointer2;
-        delete pointer3;
     }
+
+    // Deallocate dynamic memory
+    delete pointer1;
+    delete pointer2;
+    delete pointer3;
 
     return 0;
 }
