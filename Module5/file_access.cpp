@@ -14,6 +14,7 @@ void createReverseFile(string filename) {
         istreambuf_iterator<char> input_start(readFile);
         istreambuf_iterator<char> input_end;
         ostreambuf_iterator<char> output_start(writeFile);
+        // Convert to vector for access to bidirectional iterators
         vector<char> input_data(input_start, input_end);
 
         // Use reverse_copy from <algorithm>, which takes two iterators for the beginning
