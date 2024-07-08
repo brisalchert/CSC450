@@ -11,7 +11,7 @@ mutex incrementMutex;
 int value = 0;
 
 void incrementHundredThousand() {
-    // lock_guard<mutex> lockGuard(incrementMutex);
+    lock_guard<mutex> lockGuard(incrementMutex);
 
     // Increment the value one hundred thousand times
     for (int i = 0; i < 100000; i++) {
@@ -20,7 +20,7 @@ void incrementHundredThousand() {
 }
 
 void decrementFiftyThousand() {
-    // lock_guard<mutex> lockGuard(incrementMutex);
+    lock_guard<mutex> lockGuard(incrementMutex);
 
     // Decrement the value fifty thousand times
     for (int i = 0; i < 50000; i++) {
