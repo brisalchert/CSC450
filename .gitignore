@@ -4,6 +4,9 @@
 # Temp files
 *.tmp
 
+# CSC450-mod5-reverse.txt
+CSC450-mod5-reverse.txt
+
 # PDF file
 *.pdf
 
