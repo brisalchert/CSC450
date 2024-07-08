@@ -17,6 +17,10 @@ void createReverseFile(string filename) {
         vector<char> input_data(input_start, input_end);
 
         reverse_copy(input_data.begin(), input_data.end(), output_start);
+        readFile.close();
+        writeFile.close();
+
+        cout << "Successfully copied reversed character data to CSC450-mod5-reverse.txt" << endl;
     }
     else {
         cout << "Unable to open read and/or write files";
@@ -32,12 +36,16 @@ int main() {
     cout << "Enter a string: ";
     getline(cin, userInput);
 
+    cout << endl;
+
     // Open the existing text file
     file.open(filename, ios::app);
     if (file.is_open()) {
         // Append the user input to the end of CSC450_CT5_mod5.txt
         file << userInput;
         file.close();
+
+        cout << "Successfully appended user input to text file" << endl;
 
         // Reverse the file contents and store in CSC450-mod5-reverse.txt
         createReverseFile(filename);
