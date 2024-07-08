@@ -16,6 +16,8 @@ void createReverseFile(string filename) {
         ostreambuf_iterator<char> output_start(writeFile);
         vector<char> input_data(input_start, input_end);
 
+        // Use reverse_copy from <algorithm>, which takes two iterators for the beginning
+        // and end of the input and an iterator for the output and returns a reversed copy
         reverse_copy(input_data.begin(), input_data.end(), output_start);
         readFile.close();
         writeFile.close();
