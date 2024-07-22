@@ -7,8 +7,8 @@ using namespace std;
 // Declare a mutex to use in lock_guard
 mutex countMutex;
 
-// Initialize the shared value to 0
-int value = 0;
+// Initialize the shared counter to 0
+int counter = 0;
 
 // Method for counting up to 20
 void countUp() {
@@ -17,10 +17,10 @@ void countUp() {
 
     cout << "Counting up to 20..." << endl;
 
-    // Increment the value up to twenty
-    while (value <= 20) {
-        cout << "Current value: " << value << endl;
-        value++;
+    // Increment the counter up to twenty
+    while (counter <= 20) {
+        cout << "Current value: " << counter << endl;
+        counter++;
     }
 
     cout << endl;
@@ -33,10 +33,10 @@ void countDown() {
 
     cout << "Counting down to 0..." << endl;
 
-    // Decrement the value down to zero
-    while (value > 0) {
-        value--;
-        cout << "Current value: " << value << endl;
+    // Decrement the counter down to zero
+    while (counter > 0) {
+        counter--;
+        cout << "Current value: " << counter << endl;
     }
 
     cout << endl;
