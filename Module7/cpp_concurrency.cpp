@@ -23,6 +23,9 @@ void countUp() {
         counter++;
     }
 
+    // Decrement counter from 21 to 20
+    counter--;
+
     cout << endl;
 }
 
@@ -34,9 +37,9 @@ void countDown() {
     cout << "Counting down to 0..." << endl;
 
     // Decrement the counter down to zero
-    while (counter > 0) {
-        counter--;
+    while (counter >= 0) {
         cout << "Current value: " << counter << endl;
+        counter--;
     }
 
     cout << endl;
