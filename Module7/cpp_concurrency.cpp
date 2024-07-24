@@ -17,14 +17,14 @@ void countUp() {
 
     cout << "Counting up to 20..." << endl;
 
-    // Increment the counter up to twenty
-    while (counter <= 20) {
-        cout << "Current value: " << counter << endl;
-        counter++;
-    }
+    // Print initial value
+    cout << "Current value: " << counter << endl;
 
-    // Decrement counter from 21 to 20
-    counter--;
+    // Increment the counter up to twenty
+    while (counter < 20) {
+        counter++;
+        cout << "Current value: " << counter << endl;
+    }
 
     cout << endl;
 }
@@ -36,10 +36,13 @@ void countDown() {
 
     cout << "Counting down to 0..." << endl;
 
+    // Print initial value
+    cout << "Current value: " << counter << endl;
+
     // Decrement the counter down to zero
-    while (counter >= 0) {
-        cout << "Current value: " << counter << endl;
+    while (counter > 0) {
         counter--;
+        cout << "Current value: " << counter << endl;
     }
 
     cout << endl;
