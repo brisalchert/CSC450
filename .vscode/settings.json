@@ -11,6 +11,7 @@
         "xlocmon": "cpp",
         "xlocnum": "cpp",
         "xtr1common": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "thread": "cpp"
     }
 }
